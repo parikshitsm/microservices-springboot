@@ -32,7 +32,7 @@ public class RabbitMQConfiguration implements RabbitListenerConfigurer{
 	}
 	
 	@Bean
-	Binding binding(final Queue queue, final TopicExchange exchange, @Value("${multiplication.solved.key}") final String routingKey) {
+	Binding binding(final Queue queue, final TopicExchange exchange, @Value("${multiplication.anything.routing-key}") final String routingKey) {
 		System.out.println("GamificationMS | queue = " + queue + ", exchange = " + exchange + ", routingKey = " + routingKey);
 		return BindingBuilder.bind(queue).to(exchange).with(routingKey);
 	}

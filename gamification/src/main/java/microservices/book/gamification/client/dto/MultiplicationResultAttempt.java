@@ -23,11 +23,12 @@ public class MultiplicationResultAttempt {
 	
 	private final boolean correct;
 	
-	public MultiplicationResultAttempt() {
-		userAlias = null;
-		multiplicationFactorA = -1;
-		multiplicationFactorB = -1;
-		resultAttempt = -1;
-		correct = false;
-	}
+	// Empty constructor for JSON/JPA
+    MultiplicationResultAttempt() {
+        userAlias = null;
+        multiplicationFactorA = -1;
+        multiplicationFactorB = -1;
+        resultAttempt = -1;
+        correct = false;
+    }
 }

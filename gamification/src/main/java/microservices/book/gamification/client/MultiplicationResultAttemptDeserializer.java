@@ -19,7 +19,7 @@ import microservices.book.gamification.client.dto.MultiplicationResultAttempt;
 public class MultiplicationResultAttemptDeserializer extends JsonDeserializer<MultiplicationResultAttempt>{
 
 	@Override
-	public MultiplicationResultAttempt deserialize(JsonParser jsonParser, DeserializationContext ctxt)
+	public MultiplicationResultAttempt deserialize(JsonParser jsonParser, DeserializationContext deserializationContext)
 			throws IOException, JsonProcessingException {
 		ObjectCodec oc = jsonParser.getCodec();
 		JsonNode node = oc.readTree(jsonParser);

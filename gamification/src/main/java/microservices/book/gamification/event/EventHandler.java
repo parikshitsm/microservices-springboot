@@ -1,6 +1,7 @@
 package microservices.book.gamification.event;
 
 import org.springframework.amqp.AmqpRejectAndDontRequeueException;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import microservices.book.gamification.service.GameService;
 
 
+//@EnableRabbit
 @Slf4j
 @Component
 public class EventHandler {
@@ -18,7 +20,7 @@ public class EventHandler {
 		this.gameService = service;
 	}
 	
-	@RabbitListener(queues="${multiplication.queue}")
+	@RabbitListener(queues = "${multiplication.queue}")
 	public void handleMultiplicationSolved(final MultiplicationSolvedEvent event) {
 		System.out.println("handleMultiplicationSolved | Multiplication Solved Event received : " + event.getMultiplicationResultAttemptId());
 		log.info("Multiplication Solved Event received : {}", event.getMultiplicationResultAttemptId());

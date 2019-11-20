@@ -19,7 +19,7 @@ import microservices.book.gamification.service.LeaderBoardService;
 @RequestMapping("/leaders")
 public class LeaderBoardController {
 	
-	private final LeaderBoardService leaderBoardService;
+	public final LeaderBoardService leaderBoardService;
 	
 	public LeaderBoardController(final LeaderBoardService service) {
 		this.leaderBoardService = service;
