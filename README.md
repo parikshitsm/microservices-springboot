@@ -1,13 +1,13 @@
 # microservices-springboot-v1
 This project is used to create Microservices(java) using SpringBoot. Below are some of the highlights of this project. 
 
-  - Follows Event Driven Architecture 
-  - Project structure classified as per domain model
+  - Follows Event Driven Architecture.
+  - Project structure created as per domain model principles.
   - 2 seperate projects depicting 2 microservices. 
   - Communication between microservices happens via two ways : 
       - Synchronous
       - Asynchronous (using AMQP/RabbitMQ)
-  - In-memory H2 database used for quick development
+  - In-memory H2 database used for quick development.
   - Mockito framework used for JUnit testing.
   - Lombok jar dependency used to avoid traditional java boiler-plate code. 
   - Maven used for building and packaging.
