@@ -1,5 +1,5 @@
 # microservices-springboot-v1
-This project is used to create Microservices(java) using SpringBoot alongwith dependency with Lombok jar.
+This project is used to create Microservices(java) using SpringBoot. Code within this application has been built by following an excellent book named - "Learn Microservices with Spring Boot". 
 Below are some of the highlights of this project. 
 
   - Follows Event Driven Architecture 
@@ -30,9 +30,28 @@ Steps to build
 ----------------------------------
   - Clone the repository and save it to your local drive
   - Run the following command from your respective project folder. 
+      
       mvn clean install
   
   - You can also build the project from your IDE.
+ -------------------------------------------------------
+ Steps to Deploy
+ ------------------------------------------------------
+  - Once the application is successfully compiled and created respective jar, right click on your springboot application file or right  
+ click on the project and select "Run as -> Spring Boot App". 
+  - This will deploy the application onto an in-built web server (Tomcat) in case of STS. Or you can deploy the jar seperately onto 
+    external web server.
+  
+ -----------------------------------------------------------------
+ Steps to Launch the application
+ -----------------------------------------------------------------
+  (Launch below mentioned links in any web browser of your choice)
+   - microservice-1 url              : http://localhost:8080/index.html   (tomcat port is 8080 here)
+   - H2 Database console url         : http://localhost:8080/h2-console   (H2 db port is 8080 here)
+   - RabbitMQ management web url     : http://localhost:15672/mgmt        (if RabbitMQ is installed locally)
+   
+   - Launch microservice-2 on a different server port.
+   - H2 Database console url (ms-2)  : http://localhost:9090/h2-console
 
 
 
