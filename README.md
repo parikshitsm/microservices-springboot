@@ -1,4 +1,6 @@
-# microservices-springboot
-This project is used to create Microservices using SpringBoot alongwith dependency with Lombok jar. 
-The codebase is entirely built as it is from an excellent book by "Moises Macero". His book name is "Learn Microservices with Spring Boot"
-Many thanks to Moises on this amazing book. 
+# microservices-springboot-v1
+This project is used to create Microservices(java) using SpringBoot alongwith dependency with Lombok jar. 
+While reading an excellent book named "Learn Microservices with Spring Boot", I have built this codebase based on the examples shown in the book. 
+
+How to Build this project : 
+
