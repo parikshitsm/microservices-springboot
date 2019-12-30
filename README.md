@@ -1,6 +1,5 @@
 # microservices-springboot-v1
-This project is used to create Microservices(java) using SpringBoot. Code within this application has been built by following an excellent book named - "Learn Microservices with Spring Boot". 
-Below are some of the highlights of this project. 
+This project is used to create Microservices(java) using SpringBoot. Below are some of the highlights of this project. 
 
   - Follows Event Driven Architecture 
   - Project structure classified as per domain model
