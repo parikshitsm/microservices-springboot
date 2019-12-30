@@ -31,7 +31,7 @@ Steps to build
   - Clone the repository and save it to your local drive
   - Run the following command from your respective project folder. 
       
-      mvn clean install
+                mvn clean install
   
   - You can also build the project from your IDE.
  -------------------------------------------------------
